@@ -3,6 +3,22 @@ import torch
 from tqdm.auto import tqdm
 from typing import Dict, List, Tuple
 import time
+from datetime import datetime
+
+
+def val_log_saver(model_results, train_test_opt):
+    now = datetime.now()
+    date_time = now.strftime("%d_%m_%Y__%H_%M")
+
+    f = open(date_time+"__"+train_test_opt+".txt", "w")
+
+    for val in model_results[train_test_opt]:
+        # print(val)
+        f.write(str(val)+"\n")
+
+    f.close()
+
+
 
 def train_one_epoch(model: torch.nn.Module, 
                dataloader: torch.utils.data.DataLoader, 
@@ -75,7 +91,8 @@ def train(model: torch.nn.Module,
           optimizer: torch.optim.Optimizer,
           loss_fn: torch.nn.Module,
           epochs: int,
-          device: torch.device) -> Dict[str, List]:
+          device: torch.device,
+          log_txt_saver: bool) -> Dict[str, List]:
 
     results = {"train_loss": [], "train_acc": [],
                "test_loss": [], "test_acc": [] }
@@ -106,5 +123,11 @@ def train(model: torch.nn.Module,
         results["train_acc"].append(train_acc)
         results["test_loss"].append(test_loss)
         results["test_acc"].append(test_acc)
+
+    if log_txt_saver == True:
+        val_log_saver(results,"train_loss")
+        val_log_saver(results,"train_acc")
+        val_log_saver(results,"test_loss")
+        val_log_saver(results,"test_acc")
 
     return results

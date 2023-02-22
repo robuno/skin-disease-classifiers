@@ -23,9 +23,9 @@ def single_bar_plot_dataset_53(labels, values, title, xlabel, ylabel, bar_color=
 
 
 def plot_loss_accuracy_grid2(results):
-    loss = results["train_loss"]
+    train_loss = results["train_loss"]
     test_loss = results["test_loss"]
-    accuracy = results["train_acc"]
+    train_accuracy = results["train_acc"]
     test_accuracy = results["test_acc"]
 
     epochs = range(len(results["train_loss"]))
@@ -34,7 +34,7 @@ def plot_loss_accuracy_grid2(results):
 
     # Plot loss
     plt.subplot(1, 2, 1)
-    plt.plot(epochs, loss, label="train_loss", color = "red")
+    plt.plot(epochs, train_loss, label="train_loss", color = "red")
     plt.plot(epochs, test_loss, label="test_loss", color = "blue")
     plt.title("Loss")
     plt.xlabel("Epochs")
@@ -42,7 +42,7 @@ def plot_loss_accuracy_grid2(results):
 
     # Plot accuracy
     plt.subplot(1, 2, 2)
-    plt.plot(epochs, accuracy, label="train_accuracy", color = "red")
+    plt.plot(epochs, train_accuracy, label="train_accuracy", color = "red")
     plt.plot(epochs, test_accuracy, label="test_accuracy", color = "blue")
     plt.title("Accuracy")
     plt.xlabel("Epochs")
