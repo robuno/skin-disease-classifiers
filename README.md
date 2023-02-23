@@ -45,5 +45,5 @@ This repo includes a few most popular pre trained CNN models to classify dermato
 
 ![eff_b0_acc_loss_20epochs_d32](https://github.com/robuno/skin-disease-classifiers/blob/master/results/eff_b0_drop_32_epoch_20/output.png)
 
-![eff_b0_confmat_20epochs_d32](https://github.com/robuno/skin-disease-classifiers/blob/master/results/eff_b0_drop_32_epoch_20/output2.png)
+![eff_b0_confmat_20epochs_d32](https://github.com/robuno/skin-disease-classifiers/blob/master/results/eff_b0_drop_32_epoch_20/output-2.png)
   
