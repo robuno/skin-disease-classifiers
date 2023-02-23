@@ -26,4 +26,11 @@ This repo includes a few most popular pre trained CNN models to classify dermato
   └───── nv
   └───── vasc
 ```
+
+## Results
+### EfficientNet, 20 epochs, Dropout: 0.2
+
+![eff_b0_acc_loss_20epochs_d02](https://raw.githubusercontent.com/robuno/skin-disease-classifiers/master/results/eff_b0_drop_02_epoch_20/output.png)
+
+![eff_b0_confmat_20epochs_d02](https://raw.githubusercontent.com/robuno/skin-disease-classifiers/master/results/eff_b0_drop_02_epoch_20/output2.png)
   
