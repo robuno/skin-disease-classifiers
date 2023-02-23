@@ -9,22 +9,21 @@ This repo includes a few most popular pre trained CNN models to classify dermato
 
 ```bash
   ham_data/splitted_ham10000
-  |
-  | train
-     | akiec 
-     | bcc 
-     | bkl 
-     | df 
-     | mel 
-     | nv
-     | vasc
-  | test
-     | akiec 
-     | bcc 
-     | bkl 
-     | df 
-     | mel 
-     | nv
-     | vasc
+  ├── train
+  └───── akiec
+  └───── bcc
+  └───── bkl
+  └───── df
+  └───── mel
+  └───── nv
+  └───── vasc
+  ├── test
+  └───── akiec
+  └───── bcc
+  └───── bkl
+  └───── df
+  └───── mel
+  └───── nv
+  └───── vasc
 ```
   
