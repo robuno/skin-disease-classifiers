@@ -28,9 +28,22 @@ This repo includes a few most popular pre trained CNN models to classify dermato
 ```
 
 ## Results
+
+### EfficientNet, 20 epochs, Dropout: 0.1
+
+![eff_b0_acc_loss_20epochs_d10](https://github.com/robuno/skin-disease-classifiers/blob/master/results/eff_b0_drop_10_epoch_20/output.png)
+
+![eff_b0_confmat_20epochs_d10](https://github.com/robuno/skin-disease-classifiers/blob/master/results/eff_b0_drop_10_epoch_20/output2.png)
+
 ### EfficientNet, 20 epochs, Dropout: 0.2
 
-![eff_b0_acc_loss_20epochs_d02](https://raw.githubusercontent.com/robuno/skin-disease-classifiers/master/results/eff_b0_drop_02_epoch_20/output.png)
+![eff_b0_acc_loss_20epochs_d20](https://github.com/robuno/skin-disease-classifiers/blob/master/results/eff_b0_drop_20_epoch_20/output.png)
 
-![eff_b0_confmat_20epochs_d02](https://raw.githubusercontent.com/robuno/skin-disease-classifiers/master/results/eff_b0_drop_02_epoch_20/output2.png)
+![eff_b0_confmat_20epochs_d20](https://github.com/robuno/skin-disease-classifiers/blob/master/results/eff_b0_drop_20_epoch_20/output2.png)
+
+### EfficientNet, 20 epochs, Dropout: 0.32
+
+![eff_b0_acc_loss_20epochs_d32](https://github.com/robuno/skin-disease-classifiers/blob/master/results/eff_b0_drop_32_epoch_20/output.png)
+
+![eff_b0_confmat_20epochs_d32](https://github.com/robuno/skin-disease-classifiers/blob/master/results/eff_b0_drop_32_epoch_20/output.png)
   
